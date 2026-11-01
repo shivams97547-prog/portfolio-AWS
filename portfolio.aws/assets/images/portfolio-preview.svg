@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070D" />
+      <stop offset="50%" stop-color="#0B1220" />
+      <stop offset="100%" stop-color="#05070D" />
+    </linearGradient>
+    <linearGradient id="cyber-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#087BFF" />
+      <stop offset="100%" stop-color="#42B8FF" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg-grad)" />
+
+  <!-- Grid overlay -->
+  <g opacity="0.12" stroke="#42B8FF" stroke-width="1">
+    <line x1="0" y1="50" x2="800" y2="50" />
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="150" x2="800" y2="150" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="250" x2="800" y2="250" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="350" x2="800" y2="350" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="0" y1="450" x2="800" y2="450" />
+    <line x1="100" y1="0" x2="100" y2="500" />
+    <line x1="200" y1="0" x2="200" y2="500" />
+    <line x1="300" y1="0" x2="300" y2="500" />
+    <line x1="400" y1="0" x2="400" y2="500" />
+    <line x1="500" y1="0" x2="500" y2="500" />
+    <line x1="600" y1="0" x2="600" y2="500" />
+    <line x1="700" y1="0" x2="700" y2="500" />
+  </g>
+
+  <!-- HUD Window Frame -->
+  <rect x="50" y="40" width="700" height="420" rx="16" fill="#0B1220" fill-opacity="0.75" stroke="#087BFF" stroke-opacity="0.4" stroke-width="1.5" />
+  
+  <!-- Header Bar -->
+  <line x1="50" y1="85" x2="750" y2="85" stroke="#087BFF" stroke-opacity="0.25" stroke-width="1" />
+  <circle cx="80" cy="62" r="5" fill="#EF4444" opacity="0.8" />
+  <circle cx="98" cy="62" r="5" fill="#F59E0B" opacity="0.8" />
+  <circle cx="116" cy="62" r="5" fill="#10B981" opacity="0.8" />
+  <text x="145" y="66" fill="#94A3B8" font-family="'Space Grotesk', monospace" font-size="12" letter-spacing="1">SYSTEM_CORE // SHIVAM.EXE 3D IMMERSIVE ENGINE</text>
+  <rect x="630" y="52" width="90" height="20" rx="4" fill="#087BFF" fill-opacity="0.2" stroke="#42B8FF" stroke-width="1" />
+  <text x="645" y="66" fill="#42B8FF" font-family="'Space Grotesk', monospace" font-size="10" font-weight="bold">ONLINE 60FPS</text>
+
+  <!-- Central 3D Sphere Wireframe Representation -->
+  <g transform="translate(400, 260)">
+    <!-- Outer energy ring -->
+    <circle cx="0" cy="0" r="110" fill="none" stroke="url(#cyber-blue)" stroke-width="2" opacity="0.6" filter="url(#glow)" />
+    <!-- Elliptical orbits -->
+    <ellipse cx="0" cy="0" rx="135" ry="45" fill="none" stroke="#42B8FF" stroke-width="1.5" opacity="0.7" transform="rotate(-25)" />
+    <ellipse cx="0" cy="0" rx="135" ry="45" fill="none" stroke="#087BFF" stroke-width="1.5" opacity="0.7" transform="rotate(35)" />
+    <ellipse cx="0" cy="0" rx="135" ry="45" fill="none" stroke="#60A5FA" stroke-width="1" opacity="0.5" transform="rotate(85)" />
+    <!-- Inner Core -->
+    <circle cx="0" cy="0" r="50" fill="#087BFF" fill-opacity="0.15" stroke="#42B8FF" stroke-width="2" filter="url(#glow)" />
+    <circle cx="0" cy="0" r="25" fill="#42B8FF" fill-opacity="0.4" />
+    <circle cx="0" cy="0" r="10" fill="#FFFFFF" />
+    <!-- Orbiting Nodes -->
+    <circle cx="120" cy="-35" r="7" fill="#42B8FF" filter="url(#glow)" />
+    <circle cx="-110" cy="45" r="6" fill="#087BFF" filter="url(#glow)" />
+    <circle cx="30" cy="115" r="5" fill="#38BDF8" />
+    <circle cx="-60" cy="-90" r="6" fill="#60A5FA" />
+  </g>
+
+  <!-- Left HUD Metrics -->
+  <g transform="translate(85, 120)">
+    <text x="0" y="0" fill="#42B8FF" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="20">SHIVAM.EXE</text>
+    <text x="0" y="24" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="12">3D WebGL / Canvas Space</text>
+    
+    <rect x="0" y="45" width="160" height="42" rx="8" fill="#0B1220" stroke="#087BFF" stroke-opacity="0.4" />
+    <text x="12" y="63" fill="#64748B" font-family="'Space Grotesk', monospace" font-size="10">RENDER ENGINE</text>
+    <text x="12" y="79" fill="#FFFFFF" font-family="'Space Grotesk', monospace" font-size="12" font-weight="bold">Three.js + Shaders</text>
+
+    <rect x="0" y="100" width="160" height="42" rx="8" fill="#0B1220" stroke="#087BFF" stroke-opacity="0.4" />
+    <text x="12" y="118" fill="#64748B" font-family="'Space Grotesk', monospace" font-size="10">LATENCY / ASSETS</text>
+    <text x="12" y="134" fill="#10B981" font-family="'Space Grotesk', monospace" font-size="12" font-weight="bold">0ms / Lightweight</text>
+
+    <rect x="0" y="155" width="160" height="42" rx="8" fill="#0B1220" stroke="#087BFF" stroke-opacity="0.4" />
+    <text x="12" y="173" fill="#64748B" font-family="'Space Grotesk', monospace" font-size="10">HOSTING INFRA</text>
+    <text x="12" y="189" fill="#42B8FF" font-family="'Space Grotesk', monospace" font-size="12" font-weight="bold">AWS Cloud Static</text>
+  </g>
+
+  <!-- Right HUD Metrics -->
+  <g transform="translate(560, 120)">
+    <rect x="0" y="0" width="150" height="60" rx="8" fill="#0B1220" stroke="#087BFF" stroke-opacity="0.4" />
+    <text x="15" y="22" fill="#64748B" font-family="'Space Grotesk', monospace" font-size="10">INTERACTIVE NODES</text>
+    <text x="15" y="46" fill="#42B8FF" font-family="'Space Grotesk', monospace" font-size="22" font-weight="bold">6 NODES</text>
+
+    <rect x="0" y="75" width="150" height="60" rx="8" fill="#0B1220" stroke="#087BFF" stroke-opacity="0.4" />
+    <text x="15" y="97" fill="#64748B" font-family="'Space Grotesk', monospace" font-size="10">RESPONSIVE TIERS</text>
+    <text x="15" y="121" fill="#FFFFFF" font-family="'Space Grotesk', monospace" font-size="18" font-weight="bold">320px - 4K</text>
+
+    <!-- Visual Soundwave / Frequency bar -->
+    <g transform="translate(0, 150)">
+      <line x1="5" y1="20" x2="5" y2="45" stroke="#42B8FF" stroke-width="3" stroke-linecap="round" />
+      <line x1="15" y1="10" x2="15" y2="50" stroke="#087BFF" stroke-width="3" stroke-linecap="round" />
+      <line x1="25" y1="5" x2="25" y2="55" stroke="#60A5FA" stroke-width="3" stroke-linecap="round" />
+      <line x1="35" y1="15" x2="35" y2="45" stroke="#42B8FF" stroke-width="3" stroke-linecap="round" />
+      <line x1="45" y1="2" x2="45" y2="58" stroke="#087BFF" stroke-width="3" stroke-linecap="round" />
+      <line x1="55" y1="18" x2="55" y2="42" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" />
+      <line x1="65" y1="12" x2="65" y2="48" stroke="#42B8FF" stroke-width="3" stroke-linecap="round" />
+      <line x1="75" y1="22" x2="75" y2="38" stroke="#087BFF" stroke-width="3" stroke-linecap="round" />
+      <line x1="85" y1="8" x2="85" y2="52" stroke="#60A5FA" stroke-width="3" stroke-linecap="round" />
+      <line x1="95" y1="16" x2="95" y2="44" stroke="#42B8FF" stroke-width="3" stroke-linecap="round" />
+      <line x1="105" y1="25" x2="105" y2="35" stroke="#087BFF" stroke-width="3" stroke-linecap="round" />
+      <line x1="115" y1="14" x2="115" y2="46" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" />
+      <line x1="125" y1="6" x2="125" y2="54" stroke="#42B8FF" stroke-width="3" stroke-linecap="round" />
+      <line x1="135" y1="18" x2="135" y2="42" stroke="#087BFF" stroke-width="3" stroke-linecap="round" />
+      <line x1="145" y1="22" x2="145" y2="38" stroke="#60A5FA" stroke-width="3" stroke-linecap="round" />
+    </g>
+  </g>
+
+  <!-- Bottom Terminal Status Bar -->
+  <g transform="translate(85, 415)">
+    <text x="0" y="16" fill="#64748B" font-family="'Space Grotesk', monospace" font-size="11">&gt; STATUS: ALL THREE.JS SUBROUTINES FUNCTIONING OPTIMALLY [READY]</text>
+  </g>
+</svg>
