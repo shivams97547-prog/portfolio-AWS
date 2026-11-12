@@ -23,4 +23,3 @@ I'm Shivam Kumar, a B.Tech CSE (IoT) student passionate about web development, t
 
 ---
 
-⭐ If you like my portfolio, consider giving this repository a star!
