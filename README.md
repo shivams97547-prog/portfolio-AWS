@@ -22,6 +22,8 @@ A modern, responsive and interactive personal portfolio showcasing my skills, pr
 I'm Shivam Kumar, a B.Tech CSE (IoT) student passionate about web development, technology, and building creative digital experiences.
 
 ---
+⭐ If you like this project, don't forget to give it a star!
+
 
 
 
